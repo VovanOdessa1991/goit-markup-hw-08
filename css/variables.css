@@ -1,0 +1,53 @@
+:root {
+  /* !backbrop */
+  --background-backdrop: #00000033;
+  /* !SVG */
+  --svg-first-color: #afb1b8;
+  --svg-hover-color: #ffffff;
+  --svg-hover-color2: #2196f3;
+  /* !Logo */
+  --logo-first-color: #2196f3;
+  --logo-second-color: #000000;
+  /* !header */
+  --header-first-text-color: #212121;
+  --header-second-text-color: #757575;
+  --header-text-hover-color: #2196f3;
+  --nav-margin-left: 50px;
+  /* !footer */
+  --footer-first-text-color: #757575;
+  --footer-second-text-color: #2196f3;
+  --footer-addres-text-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --footer-logo-second-color: #ffffff;
+  /* !title */
+  --title-first-text-color: #ffffff;
+  --title-second-text-color: #212121;
+  /* !text */
+  --second-text-color: #212121;
+  --first-text-color: #757575;
+  /* !button */
+  --button-text-color: #212121;
+  --button-hover-text-color: #ffffff;
+  --button-background-color: #f5f4fa;
+  --button-background-hover-color: #2196f3;
+  /* !hero */
+  --hero-title-color: #ffffff;
+  --hero-button-color: #212121;
+  --hero-button-hover-color: #ffffff;
+  --hero-button-bacground-color: #f5f4fa;
+  --hero-button-bacground-hover-color: #2196f3;
+  --hero-background-color: #2f303a;
+  /* !background */
+  --background-first-color: #ffffff;
+  --background-second-color: #f5f4fa;
+  /*  !Width card */
+  --width-card-thin: 270px;
+  --width-card-thick: 370px;
+  /*  ! margin  padding */
+  --margin-padding-witch-block: 94px;
+  --margin-title-bottom: 50px;
+  --padding-footer: 60px;
+  --padding-footer-left: 45px;
+  --margin-bottom: 30px;
+}
+/*# sourceMappingURL=variables.css.map */

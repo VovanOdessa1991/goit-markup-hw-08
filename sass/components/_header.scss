@@ -1,0 +1,116 @@
+.header {
+  // padding-top: 24px;
+  // padding-bottom: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ececec;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+.logo {
+  text-decoration: none;
+
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-second-color);
+  &__first-part {
+    color: var(--logo-first-color);
+  }
+}
+.nav__button-mobile {
+  display: inline-flex;
+  background-color: transparent;
+
+  & .nav__icon-close {
+    display: none;
+  }
+  &.is-open .nav__icon-close {
+    display: block;
+  }
+  &.is-open .nav__icon-menu {
+    display: none;
+  }
+}
+.nav__icon {
+}
+
+.nav__icon-menu {
+}
+
+.nav__list {
+  list-style-type: none;
+  margin-left: 92px;
+}
+.nav__item {
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  & + & {
+    margin-left: var(--nav-margin-left);
+  }
+}
+
+.nav__link {
+  color: var(--header-first-text-color);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--header-text-hover-color);
+  }
+}
+
+.current {
+  color: var(--header-text-hover-color);
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--button-background-hover-color);
+    position: absolute;
+    bottom: -28px;
+    border-radius: 2px;
+  }
+}
+
+// .nav__link:hover,
+// .nav__link:focus,
+// .header-item-link:focus,
+// .header-item-link:hover {
+//   color: var(--header-text-hover-color);
+// }
+.contacts__list {
+  list-style-type: none;
+  margin-left: auto;
+}
+.contacts__item + .contact__item {
+  margin-left: var(--nav-margin-left);
+}
+.contacts__link {
+  color: var(--header-second-text-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  &:focus,
+  &:hover {
+    color: var(--header-text-hover-color);
+  }
+}
+//! Удалить спам!!!
+.header__mail {
+  margin-right: 10px;
+}
+.header__mail-icon {
+  fill: currentColor;
+}

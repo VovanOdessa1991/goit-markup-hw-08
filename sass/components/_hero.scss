@@ -5,10 +5,10 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to right, rgba(58, 47, 47, 0.4), rgba(58, 47, 47, 0.4)),
-    url('../images/img-hero-mobile.jpg');
+    url('../images/hero/img-hero-mobile.jpg');
   @include pixel-2x {
     background-image: linear-gradient(to right, rgba(58, 47, 47, 0.4), rgba(58, 47, 47, 0.4)),
-      url('../images/img-hero-mobile-2x.jpg');
+      url('../images/hero/img-hero-mobile-2x.jpg');
   }
   text-align: center;
   height: 400px;

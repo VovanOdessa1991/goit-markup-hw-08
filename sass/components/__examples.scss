@@ -1,4 +1,8 @@
 .examples {
+  display: none;
+  @include desk {
+    display: block;
+  }
   padding-bottom: var(--margin-padding-witch-block);
 }
 .examples__title {

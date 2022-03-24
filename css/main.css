@@ -709,7 +709,14 @@ img {
 }
 
 .examples {
+  display: none;
   padding-bottom: var(--margin-padding-witch-block);
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: block;
+  }
 }
 
 .examples__title {

@@ -1,21 +1,44 @@
 .doing {
   // padding-top: var(--margin-padding-witch-block);
-  // padding-bottom: var(--margin-padding-witch-block);
+  margin-bottom: var(--margin-padding-witch-mobile-block);
+  @include desk {
+    margin-bottom: var(--margin-padding-witch-block);
+  }
 }
 .doing__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .doing__item {
   width: 100%;
   display: inline-block;
-  & + & {
-    // margin-left: 30px;
+  @include tel-only {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: var(--margin-padding-witch-mobile-block);
+    }
   }
-  &:not(:last-child) {
-    margin-bottom: 30px;
+
+  @include tab-only {
+    max-width: 354px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: var(--margin-bottom);
+    }
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
   }
-  &:last-child {
-    margin-bottom: var(--margin-padding-witch-mobile-block);
+  @include desk {
+    width: 270px;
+    min-height: 251px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 

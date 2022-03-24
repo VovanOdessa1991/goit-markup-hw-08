@@ -17,7 +17,10 @@
   padding-bottom: 118px;
   // padding-top: 200px;
   // padding-bottom: 200px;
-  margin-bottom: 60px;
+  margin-bottom: var(--margin-padding-witch-mobile-block);
+  @include desk {
+    margin-bottom: var(--margin-padding-witch-block);
+  }
 }
 .hero__title {
   color: var(--hero-title-color);

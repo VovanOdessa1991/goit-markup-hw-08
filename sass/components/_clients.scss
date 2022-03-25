@@ -1,6 +1,10 @@
 .clients {
   padding-top: var(--margin-padding-witch-mobile-block);
   padding-bottom: var(--margin-padding-witch-mobile-block);
+  @include desk {
+    padding-top: var(--margin-padding-witch-block);
+    padding-bottom: var(--margin-padding-witch-block);
+  }
 }
 
 .clients__title {
@@ -21,16 +25,18 @@
 
 .clients__item {
   // width: 100%;
-  width: 210px;
-  height: 92px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  @include tel-max {
+    width: 210px;
+    height: 92px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
   // &:not(:last-child) {
   // margin-bottom: 30px;
   // }
 
-  @include tel {
-    width: 210px;
+  @include tel-only {
     margin-bottom: 0px;
     // &:not(:last-child) {
     //   margin-bottom: 0px;
@@ -40,6 +46,20 @@
     }
     &:nth-child(odd) {
       margin-right: 30px;
+    }
+  }
+  @include tab-only {
+    width: 226px;
+    height: 92px;
+    &:nth-child(-n + 3) {
+      margin-bottom: var(--margin-bottom);
+    }
+  }
+  @include desk {
+    width: 170px;
+    height: 92px;
+    &:not(:first-child) {
+      margin-left: var(--margin-bottom);
     }
   }
 }

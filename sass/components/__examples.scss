@@ -17,6 +17,8 @@
 
 .examples__images {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .examples__item {
 }
@@ -30,15 +32,15 @@
 }
 
 .example__conteiner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 70px;
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
-
-  align-items: center;
-  justify-content: center;
 }
 .example__text {
   font-weight: 700;

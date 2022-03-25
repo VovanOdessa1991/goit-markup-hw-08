@@ -177,7 +177,17 @@
           <ul class="examples__images flex">
             <li class="examples__item">
               <div class="example__container">
-                <img class="examples__image" src="./images/img1.jpg" alt="Руки програмирут " />
+                <picture>
+                <source 
+                srcset="
+                ./images/img1.jpg 1x,
+                ./images/img-1-2x.jpg 2x
+                "                
+                >
+                
+                <img src="./images/img1.jpg" alt="Руки програмирут" />
+              </picture>
+                
                 <div class="example__conteiner-text flex">
                   <p class="example__text">Десктопные приложения</p>
                 </div>
@@ -185,11 +195,17 @@
             </li>
             <li class="examples__item">
               <div class="example__container">
-                <img
-                  class="examples__image"
-                  src="./images/img2.jpg"
-                  alt="верстка мобильного дизайна"
-                />
+                <picture>
+                  <source 
+                  srcset="
+                  ./images/img2.jpg 1x,
+                  ./images/img-2-2x.jpg 2x
+                  "                
+                  >
+                  
+                  <img src="./images/img2.jpg" alt="верстка мобильного дизайна" />
+               </picture>
+                
                 <div class="example__conteiner-text flex">
                   <p class="example__text">Мобильные приложения</p>
                 </div>
@@ -197,7 +213,16 @@
             </li>
             <li class="examples__item">
               <div class="example__container">
-                <img class="examples__image" src="./images/img3.jpg" alt="подбор цвета" />
+                    <picture>
+                      <source 
+                      srcset="
+                      ./images/img3.jpg 1x,
+                      ./images/img-3-2x.jpg 2x
+                      "                
+                      >
+                      
+                      <img src="./images/img3.jpg" alt="подбор цвета" />
+                  </picture>                
                 <div class="example__conteiner-text flex">
                   <p class="example__text">Дизайнерские решения</p>
                 </div>
@@ -234,7 +259,7 @@
                 "
                 media="(min-width:320px)"
                 >
-                <!-- <img src="./images/people/img-person-1-mobile.jpg" alt="Фото Игорь Демьяненко" /> -->
+                <img src="./images/people/img-person-1-mobile.jpg" alt="Фото Игорь Демьяненко" />
               </picture>
               
               <div class="we__item-div">
@@ -276,7 +301,30 @@
               </div>
             </li>
             <li class="we__item">
-              <img class="we__image" src="./images/img_people2.jpg" alt="Фото Ольга Репина" />
+             <picture>
+                <source 
+                srcset="
+                ./images/people/img-person-2-desktop.jpg 1x,
+                ./images/people/img-person-2-desktop-x2.jpg 2x
+                "
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-2-tablet.jpg 1x,
+                ./images/people/img-person-2-tablet-x2.jpg 2x
+                "
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-2-mobile.jpg 1x,
+                ./images/people/img-person-2-mobile-x2.jpg 2x
+                "
+                media="(min-width:320px)"
+                >
+                <img src="./images/people/img-person-2-mobile.jpg" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="we__item-div">
                 <h3 class="we__item-title">Ольга Репина</h3>
                 <p class="we__item-text" lang="en">Frontend Developer</p>
@@ -316,7 +364,30 @@
               </div>
             </li>
             <li class="we__item">
-              <img class="we__image" src="./images/img_people3.jpg" alt="Фото Николай Тарасов" />
+             <picture>
+                <source 
+                srcset="
+                ./images/people/img-person-3-desktop.jpg 1x,
+                ./images/people/img-person-3-desktop-x2.jpg 2x
+                "
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-3-tablet.jpg 1x,
+                ./images/people/img-person-3-tablet-x2.jpg 2x
+                "
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-3-mobile.jpg 1x,
+                ./images/people/img-person-3-mobile-x2.jpg 2x
+                "
+                media="(min-width:320px)"
+                >
+                <img src="./images/people/img-person-3-mobile.jpg" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="we__item-div">
                 <h3 class="we__item-title">Николай Тарасов</h3>
                 <p class="we__item-text" lang="en">Marketing</p>
@@ -356,7 +427,30 @@
               </div>
             </li>
             <li class="we__item">
-              <img class="we__image" src="./images/img_people4.jpg" alt="Фото Михаил Ермаков" />
+              <picture>
+                <source 
+                srcset="
+                ./images/people/img-person-4-desktop.jpg 1x,
+                ./images/people/img-person-4-desktop-x2.jpg 2x
+                "
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-4-tablet.jpg 1x,
+                ./images/people/img-person-4-tablet-x2.jpg 2x
+                "
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-4-mobile.jpg 1x,
+                ./images/people/img-person-4-mobile-x2.jpg 2x
+                "
+                media="(min-width:320px)"
+                >
+                <img src="./images/people/img-person-4-mobile.jpg" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="we__item-div">
                 <h3 class="we__item-title">Михаил Ермаков</h3>
                 <p class="we__item-text" lang="en">UI Designer</p>

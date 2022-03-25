@@ -29,7 +29,7 @@
   background-color: var(--background-first-color);
   @include tel-max {
     width: 100%;
-    min-height: 622px;
+    // min-height: 622px;
     &:not(:last-child) {
       margin-bottom: var(--margin-in-section);
     }

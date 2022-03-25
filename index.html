@@ -212,7 +212,31 @@
           <h2 class="we__title">Наша команда</h2>
           <ul class="we__list">
             <li class="we__item">
-              <img class="we__image" src="./images/img_people1.jpg" alt="Фото Игорь Демьяненко" />
+              <picture>
+                <source 
+                srcset="
+                ./images/people/img-person-1-desktop.jpg 1x,
+                ./images/people/img-person-1-desktop-x2.jpg 2x
+                "
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-1-tablet.jpg 1x,
+                ./images/people/img-person-1-tablet-x2.jpg 2x
+                "
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/people/img-person-1-mobile.jpg 1x,
+                ./images/people/img-person-1-mobile-x2.jpg 2x
+                "
+                media="(min-width:320px)"
+                >
+                <!-- <img src="./images/people/img-person-1-mobile.jpg" alt="Фото Игорь Демьяненко" /> -->
+              </picture>
+              
               <div class="we__item-div">
                 <h3 class="we__item-title">Игорь Демьяненко</h3>
                 <p class="we__item-text" lang="en">Product Designer</p>

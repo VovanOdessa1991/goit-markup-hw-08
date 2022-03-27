@@ -1,0 +1,8 @@
+.section {
+  padding-top: var(--margin-padding-witch-mobile-block);
+  padding-bottom: var(--margin-padding-witch-mobile-block);
+  @include desk {
+    padding-top: var(--margin-padding-witch-block);
+    padding-bottom: var(--margin-padding-witch-block);
+  }
+}

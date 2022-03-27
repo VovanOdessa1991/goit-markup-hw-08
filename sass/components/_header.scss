@@ -16,7 +16,10 @@
 }
 
 .nav {
-  width: 100%;
+  @include tel-max {
+    width: 100%;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,6 +168,16 @@
 }
 //! Удалить спам!!!
 .header__mail {
+  @include desk {
+    display: none;
+  }
+  margin-right: 10px;
+}
+.header__mail--desc {
+  display: none;
+  @include desk {
+    display: block;
+  }
   margin-right: 10px;
 }
 .header__mail-icon {
@@ -257,6 +270,7 @@
   left: 40px;
   bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
 }
 .socials-mobile__item {
   position: relative;

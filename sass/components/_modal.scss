@@ -1,15 +1,28 @@
 .modal {
   padding: 40px;
+  @media screen and (max-width: 480px) {
+    margin: 93px 15px;
+
+    width: calc(100vw - 30px);
+    max-width: 450px;
+    // max-width: 450px;
+    // max-height: 609px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   width: 528px;
   min-height: 581px;
   background-color: var(--background-first-color);
   border-radius: 4px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) skew(0) rotate(0) scale(1);
+  @include tab {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(0) rotate(0) scale(1);
 
-  transition: transform 580ms;
+    transition: transform 580ms;
+  }
 }
 
 .modal__button-close {
@@ -43,22 +56,31 @@
   margin: -1px;
 }
 .modal__container {
+  @include tel-max {
+    width: 100%;
+  }
   margin: 0 auto;
-  width: 448px;
-  height: 23px;
+  @include tab {
+    width: 448px;
+    height: 23px;
+  }
+
   margin-bottom: 13px;
 }
 .modal__title {
-  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 23px;
   letter-spacing: 0.03em;
   text-align: center;
+  color: #212121;
 }
 .form {
   margin: 0 auto;
+  @include tel-max {
+    width: 100%;
+  }
   width: 448px;
   min-height: 342px;
 }

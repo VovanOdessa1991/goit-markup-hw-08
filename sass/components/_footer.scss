@@ -15,17 +15,20 @@
 
 .footer__container {
   // max-width: 231px;
-  width: 100%;
+  @include tel-max {
+    width: 100%;
+  }
+
   // margin-right: 70px;
   // margin-bottom: 20px;
   @include tab-max {
     margin-bottom: var(--margin-padding-witch-mobile-block);
   }
 
-  @include tab-only {
-    width: 232px;
-    margin-left: var(--margin-padding-witch-mobile-block);
-  }
+  // @include tab-only {
+  //   width: 232px;
+  //   margin-left: var(--margin-padding-witch-mobile-block);
+  // }
   @include desk {
     width: 232px;
   }
@@ -81,15 +84,18 @@
 
 .connect {
   // width: 206px;
-  width: 100%;
+  @include tel-max {
+    width: 100%;
+  }
+
   @include tab-max {
     margin-bottom: var(--margin-padding-witch-mobile-block);
   }
 
-  @include tab-only {
-    width: 206px;
-    margin-right: 74px;
-  }
+  // @include tab-only {
+  //   width: 206px;
+  //   margin-right: 74px;
+  // }
   @include desk {
     width: 206px;
   }
@@ -121,6 +127,9 @@
   }
 }
 .footer__title {
+  @include tab-max {
+    text-align: center;
+  }
   text-align: left;
   font-weight: bold;
   font-size: 14px;
@@ -143,6 +152,7 @@
 // !  user-test-email 441
 .footer__input {
   width: 100%;
+  max-width: 450px;
   margin-bottom: 20px;
   @include desk {
     width: 350px;

@@ -1,8 +1,11 @@
 .container {
-  width: calc(100%-30px);
-  margin-left: 15px;
-  margin-right: 15px;
-  max-width: 450px;
+  // width: calc(100% - 30px);
+  @include tab-max {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  max-width: 480px;
   margin: 0 auto;
   // width: 1200px;
   // padding-left: 15px;

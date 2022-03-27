@@ -1,11 +1,11 @@
-.clients {
-  padding-top: var(--margin-padding-witch-mobile-block);
-  padding-bottom: var(--margin-padding-witch-mobile-block);
-  @include desk {
-    padding-top: var(--margin-padding-witch-block);
-    padding-bottom: var(--margin-padding-witch-block);
-  }
-}
+// .clients {
+//   padding-top: var(--margin-padding-witch-mobile-block);
+//   padding-bottom: var(--margin-padding-witch-mobile-block);
+//   @include desk {
+//     padding-top: var(--margin-padding-witch-block);
+//     padding-bottom: var(--margin-padding-witch-block);
+//   }
+// }
 
 .clients__title {
   font-size: 36px;
@@ -16,6 +16,10 @@
   text-align: center;
   color: var(--second-text-color);
   margin-bottom: 50px;
+  @include tab-max {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 .clients__list {
   display: flex;

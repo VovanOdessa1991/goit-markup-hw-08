@@ -1,12 +1,12 @@
-.we {
+.section--we {
   background-color: var(--background-second-color);
   // padding-top: var(--margin-padding-witch-block);
-  padding-top: var(--margin-padding-witch-mobile-block);
-  padding-bottom: var(--margin-padding-witch-mobile-block);
-  @include desk {
-    padding-top: var(--margin-padding-witch-block);
-    padding-bottom: var(--margin-padding-witch-block);
-  }
+  // padding-top: var(--margin-padding-witch-mobile-block);
+  // padding-bottom: var(--margin-padding-witch-mobile-block);
+  // @include desk {
+  //   padding-top: var(--margin-padding-witch-block);
+  //   padding-bottom: var(--margin-padding-witch-block);
+  // }
 }
 .we__title {
   color: var(--title-second-text-color);
@@ -16,7 +16,12 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: var(--margin-title-bottom);
+  @include tab-max {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
+
 .we__list {
   list-style: none;
   text-align: center;

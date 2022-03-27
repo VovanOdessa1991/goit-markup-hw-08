@@ -22,37 +22,46 @@
 
   <body>
     <header class="header">
-      <div class=" container header__container">
+      <div class="container header__container">
         <nav class="nav">
           <a class="logo" href="index.html"><span class="logo__first-part">Web</span>Studio</a>
 
           <!-- ! Button for mobile menu -->
           <button type="button" class="nav__button-mobile" data-mobile-open>
-            <svg class="nav__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                  <use class="nav__icon-menu" href="./images/symbol-defs.svg#icon-menu_40px_mobile"></use>
-                  <!-- <use class="nav__icon-close" href="./images/symbol-defs.svg#icon-close_40px_mobile"></use> -->
-                </svg> </button>
-          
+            <svg
+              class="nav__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="nav__icon-menu"
+                href="./images/symbol-defs.svg#icon-menu_40px_mobile"
+              ></use>
+              <!-- <use class="nav__icon-close" href="./images/symbol-defs.svg#icon-close_40px_mobile"></use> -->
+            </svg>
+          </button>
+
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link  nav__link--current" href="index.html">Студия</a>
+              <a class="nav__link nav__link--current" href="index.html">Студия</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="portfolio.html">Портфолио</a>
             </li>
-            <li class="nav__item"><a class="nav__link " href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">              
-              <span class="header__mail"> 
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <span class="header__mail">
                 <svg class="header__mail-icon" width="14" height="10">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
               </span>
-              <span class="header__mail--desc"> 
+              <span class="header__mail--desc">
                 <svg class="header__mail-icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
@@ -61,7 +70,7 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link " href="tel:+380961111111">
+            <a class="contacts__link" href="tel:+380961111111">
               <span class="header__mail">
                 <svg class="header__mail-icon" width="10" height="14">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -77,14 +86,21 @@
           </li>
         </ul>
 
-        <div class="mobile is-hidden"  data-mobile>
+        <div class="mobile is-hidden" data-mobile>
           <div class="mobile__container">
-            <button class="button mobile__button " type="button" data-mobile-close>
-              <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="mobile__icon-close" href="./images/symbol-defs.svg#icon-close_40px_mobile">
-              </use>
-                </svg>
-              </button>
+            <button class="button mobile__button" type="button" data-mobile-close>
+              <svg
+                class="mobile__icon"
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="mobile__icon-close"
+                  href="./images/symbol-defs.svg#icon-close_40px_mobile"
+                ></use>
+              </svg>
+            </button>
             <ul class="menu">
               <li class="menu__item">
                 <a href="" class="menu__link">Студия</a>
@@ -97,11 +113,18 @@
               </li>
             </ul>
             <ul class="contacts-mobile">
-              <li class="contacts-mobile__item ">
-                <a href="" class="contacts-mobile__link contacts-mobile__link-hover" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="contacts-mobile__item">
+                <a
+                  href=""
+                  class="contacts-mobile__link contacts-mobile__link-hover"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
               <li class="contacts-mobile__item">
-                <a href="" class="contacts-mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="" class="contacts-mobile__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <ul class="socials-mobile">
@@ -125,7 +148,10 @@
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <h1 class="hero__title">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
+            ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
           <button class="bottom hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -180,24 +206,19 @@
           </ul>
         </div>
       </section>
-      
-      <section class=" section examples">
+
+      <section class="section examples">
         <div class="container">
           <h2 class="examples__title">Чем мы занимаемся</h2>
           <ul class="examples__images">
             <li class="examples__item">
               <div class="example__container">
                 <picture>
-                <source 
-                srcset="
-                ./images/img1.jpg 1x,
-                ./images/img-1-2x.jpg 2x
-                "                
-                >
-                
-                <img src="./images/img1.jpg" alt="Руки програмирут" />
-              </picture>
-                
+                  <source srcset="./images/img1.jpg 1x, ./images/img-1-2x.jpg 2x" />
+
+                  <img src="./images/img1.jpg" alt="Руки програмирут" />
+                </picture>
+
                 <div class="example__conteiner-text">
                   <p class="example__text">Десктопные приложения</p>
                 </div>
@@ -206,16 +227,11 @@
             <li class="examples__item">
               <div class="example__container">
                 <picture>
-                  <source 
-                  srcset="
-                  ./images/img2.jpg 1x,
-                  ./images/img-2-2x.jpg 2x
-                  "                
-                  >
-                  
+                  <source srcset="./images/img2.jpg 1x, ./images/img-2-2x.jpg 2x" />
+
                   <img src="./images/img2.jpg" alt="верстка мобильного дизайна" />
-               </picture>
-                
+                </picture>
+
                 <div class="example__conteiner-text">
                   <p class="example__text">Мобильные приложения</p>
                 </div>
@@ -223,16 +239,11 @@
             </li>
             <li class="examples__item">
               <div class="example__container">
-                    <picture>
-                      <source 
-                      srcset="
-                      ./images/img3.jpg 1x,
-                      ./images/img-3-2x.jpg 2x
-                      "                
-                      >
-                      
-                      <img src="./images/img3.jpg" alt="подбор цвета" />
-                  </picture>                
+                <picture>
+                  <source srcset="./images/img3.jpg 1x, ./images/img-3-2x.jpg 2x" />
+
+                  <img src="./images/img3.jpg" alt="подбор цвета" />
+                </picture>
                 <div class="example__conteiner-text">
                   <p class="example__text">Дизайнерские решения</p>
                 </div>
@@ -242,36 +253,36 @@
         </div>
       </section>
 
-      <section class=" section section--we ">
+      <section class="section section--we">
         <div class="container">
           <h2 class="we__title">Наша команда</h2>
           <ul class="we__list">
             <li class="we__item">
               <picture>
-                <source 
-                srcset="
-                ./images/people/img-person-1-desktop.jpg 1x,
-                ./images/people/img-person-1-desktop-x2.jpg 2x
-                "
-                media="(min-width:1200px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-1-tablet.jpg 1x,
-                ./images/people/img-person-1-tablet-x2.jpg 2x
-                "
-                media="(min-width:768px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-1-mobile.jpg 1x,
-                ./images/people/img-person-1-mobile-x2.jpg 2x
-                "
-                media="(min-width:320px)"
-                >
+                <source
+                  srcset="
+                    ./images/people/img-person-1-desktop.jpg    1x,
+                    ./images/people/img-person-1-desktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-1-tablet.jpg    1x,
+                    ./images/people/img-person-1-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-1-mobile.jpg    1x,
+                    ./images/people/img-person-1-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
                 <img src="./images/people/img-person-1-mobile.jpg" alt="Фото Игорь Демьяненко" />
               </picture>
-              
+
               <div class="we__box">
                 <h3 class="we__item-title">Игорь Демьяненко</h3>
                 <p class="we__item-text" lang="en">Product Designer</p>
@@ -311,28 +322,28 @@
               </div>
             </li>
             <li class="we__item">
-             <picture>
-                <source 
-                srcset="
-                ./images/people/img-person-2-desktop.jpg 1x,
-                ./images/people/img-person-2-desktop-x2.jpg 2x
-                "
-                media="(min-width:1200px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-2-tablet.jpg 1x,
-                ./images/people/img-person-2-tablet-x2.jpg 2x
-                "
-                media="(min-width:768px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-2-mobile.jpg 1x,
-                ./images/people/img-person-2-mobile-x2.jpg 2x
-                "
-                media="(min-width:320px)"
-                >
+              <picture>
+                <source
+                  srcset="
+                    ./images/people/img-person-2-desktop.jpg    1x,
+                    ./images/people/img-person-2-desktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-2-tablet.jpg    1x,
+                    ./images/people/img-person-2-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-2-mobile.jpg    1x,
+                    ./images/people/img-person-2-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
                 <img src="./images/people/img-person-2-mobile.jpg" alt="Фото Игорь Демьяненко" />
               </picture>
               <div class="we__box">
@@ -374,28 +385,28 @@
               </div>
             </li>
             <li class="we__item">
-             <picture>
-                <source 
-                srcset="
-                ./images/people/img-person-3-desktop.jpg 1x,
-                ./images/people/img-person-3-desktop-x2.jpg 2x
-                "
-                media="(min-width:1200px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-3-tablet.jpg 1x,
-                ./images/people/img-person-3-tablet-x2.jpg 2x
-                "
-                media="(min-width:768px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-3-mobile.jpg 1x,
-                ./images/people/img-person-3-mobile-x2.jpg 2x
-                "
-                media="(min-width:320px)"
-                >
+              <picture>
+                <source
+                  srcset="
+                    ./images/people/img-person-3-desktop.jpg    1x,
+                    ./images/people/img-person-3-desktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-3-tablet.jpg    1x,
+                    ./images/people/img-person-3-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-3-mobile.jpg    1x,
+                    ./images/people/img-person-3-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
                 <img src="./images/people/img-person-3-mobile.jpg" alt="Фото Игорь Демьяненко" />
               </picture>
               <div class="we__box">
@@ -438,27 +449,27 @@
             </li>
             <li class="we__item">
               <picture>
-                <source 
-                srcset="
-                ./images/people/img-person-4-desktop.jpg 1x,
-                ./images/people/img-person-4-desktop-x2.jpg 2x
-                "
-                media="(min-width:1200px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-4-tablet.jpg 1x,
-                ./images/people/img-person-4-tablet-x2.jpg 2x
-                "
-                media="(min-width:768px)"
-                >
-                <source 
-                srcset="
-                ./images/people/img-person-4-mobile.jpg 1x,
-                ./images/people/img-person-4-mobile-x2.jpg 2x
-                "
-                media="(min-width:320px)"
-                >
+                <source
+                  srcset="
+                    ./images/people/img-person-4-desktop.jpg    1x,
+                    ./images/people/img-person-4-desktop-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-4-tablet.jpg    1x,
+                    ./images/people/img-person-4-tablet-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/people/img-person-4-mobile.jpg    1x,
+                    ./images/people/img-person-4-mobile-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
                 <img src="./images/people/img-person-4-mobile.jpg" alt="Фото Игорь Демьяненко" />
               </picture>
               <div class="we__box">
@@ -551,10 +562,10 @@
             </li>
           </ul>
         </div>
-      </section>  
+      </section>
     </main>
     <footer class="footer">
-      <div class="container footer__flex ">
+      <div class="container footer__flex">
         <!-- flex  -->
         <div class="footer__container">
           <a class="footer__logo" href="index.html"
@@ -573,9 +584,7 @@
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link transition" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="footer__link transition" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -583,45 +592,43 @@
         <div class="connect">
           <h2 class="connect__title">присоединяйтесь</h2>
           <ul class="we__social-list flex">
-            
-                  <li class="we__social-item">
-                    <a href="#" class="we__social-link flex footer__icon transition">
-                      <svg class="we__social-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+            <li class="we__social-item">
+              <a href="#" class="we__social-link flex footer__icon transition">
+                <svg class="we__social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-                  <li class="we__social-item">
-                    <a href="#" class="we__social-link flex footer__icon transition">
-                      <svg class="we__social-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+            <li class="we__social-item">
+              <a href="#" class="we__social-link flex footer__icon transition">
+                <svg class="we__social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
 
-                  <li class="we__social-item">
-                    <a href="#" class="we__social-link flex footer__icon transition">
-                      <svg class="we__social-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+            <li class="we__social-item">
+              <a href="#" class="we__social-link flex footer__icon transition">
+                <svg class="we__social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
 
-                  <li class="we__social-item">
-                    <a href="#" class="we__social-link flex footer__icon transition">
-                      <svg class="we__social-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+            <li class="we__social-item">
+              <a href="#" class="we__social-link flex footer__icon transition">
+                <svg class="we__social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="footer__form-container">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
-          <div  class="footer__form">
+          <div class="footer__form">
             <label for="user-test-email" class="from__test-label">
-              
               <span class="footer__spam">
                 <input
                   name="user-test-email"
@@ -630,16 +637,15 @@
                   placeholder="E-mail"
                   class="footer__input transition"
                 />
-                
               </span>
             </label>
-             
-              <button class="footer__submit" type="submit">Подписаться<svg class="footer__icon-test transition">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-                </button>
 
-             
+            <button class="footer__submit" type="submit">
+              Подписаться<svg class="footer__icon-test transition">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -752,6 +758,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-     <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

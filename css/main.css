@@ -243,7 +243,7 @@ img {
   height: 4px;
   background-color: var(--button-background-hover-color);
   position: absolute;
-  bottom: -28px;
+  bottom: -33px;
   border-radius: 4px;
 }
 

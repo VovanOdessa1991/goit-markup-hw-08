@@ -3,12 +3,15 @@
   padding-top: var(--margin-padding-witch-mobile-block);
   padding-bottom: var(--margin-padding-witch-mobile-block);
   text-align: center;
+  @include desk {
+    text-align: left;
+  }
 }
 .footer__flex {
   @include tab {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -48,6 +51,9 @@
   color: var(--footer-logo-second-color);
   margin-bottom: 20px;
 }
+.logo__first-color {
+  color: #2196f3;
+}
 
 // .footer-linc {
 // }
@@ -59,6 +65,9 @@
   letter-spacing: 0.03em;
   // text-align: left;
   text-align: center;
+  @include desk {
+    text-align: left;
+  }
 }
 .footer__item {
   & > a {
@@ -89,7 +98,7 @@
   }
 
   @include tab-max {
-    margin-bottom: var(--margin-padding-witch-mobile-block);
+    // margin-bottom: var(--margin-padding-witch-mobile-block);
   }
 
   // @include tab-only {
